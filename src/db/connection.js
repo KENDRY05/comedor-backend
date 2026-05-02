@@ -1,12 +1,6 @@
 import mysql from "mysql2";
 
 export const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "comedor_db"
-});
-export const connection = mysql.createConnection({
   host: process.env.MYSQLHOST,
   user: process.env.MYSQLUSER,
   password: process.env.MYSQLPASSWORD,
